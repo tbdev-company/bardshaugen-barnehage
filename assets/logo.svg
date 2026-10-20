@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 232" role="img" aria-labelledby="t"><title id="t">Bårdshaugen Barnehage</title><g transform="translate(110 0)">
+<circle cx="100" cy="88" r="78" fill="#c4de62"/>
+<g fill="#93b843"><path d="M42 140V58c0-6 10-6 10 0v82z"/><path d="M60 140V44c0-7 12-7 12 0v96z"/><path d="M78 120V62c0-5 9-5 9 0v58z"/><path d="M140 140V60c0-6 10-6 10 0v80z"/><path d="M156 140V76c0-5 8-5 8 0v64z"/></g>
+<path d="M112 6 L148 14 L138 70 L150 146 L58 152 L64 120 L100 112 Z" fill="#a9acaa" stroke="#3a3c3b" stroke-width="3" stroke-linejoin="round"/>
+<g stroke="#2a2a2a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+<path d="M36 112 q-6-2-4-8 q6 0 10 4z" fill="#f6d39a"/><path d="M164 112 q6-2 4-8 q-6 0-10 4z" fill="#f6d39a"/>
+<path d="M44 108 C60 98 80 100 96 104 L98 136 L56 138 Z" fill="#2e3f8f"/>
+<path d="M104 104 C122 98 142 100 158 108 L148 138 L102 136 Z" fill="#d6322b"/>
+<circle cx="76" cy="84" r="20" fill="#f6d39a"/><circle cx="124" cy="84" r="20" fill="#f6d39a"/>
+<path d="M54 76 C56 52 96 52 98 74 C86 66 66 66 54 76Z" fill="#2e3f8f"/>
+<path d="M104 78 C100 50 146 50 146 74 C134 64 116 66 104 78Z" fill="#d6322b"/>
+<path d="M140 70 C150 74 150 92 144 102" fill="none"/>
+<path d="M66 92 q10 9 20 0" fill="none"/><path d="M114 92 q10 9 20 0" fill="none"/>
+<circle cx="69" cy="82" r="1.8" fill="#2a2a2a"/><circle cx="83" cy="82" r="1.8" fill="#2a2a2a"/><circle cx="117" cy="82" r="1.8" fill="#2a2a2a"/><circle cx="131" cy="82" r="1.8" fill="#2a2a2a"/>
+<rect x="56" y="128" width="20" height="38" rx="9" fill="#805c44"/><rect x="78" y="128" width="20" height="38" rx="9" fill="#805c44"/>
+<rect x="104" y="128" width="20" height="38" rx="9" fill="#805c44"/><rect x="126" y="128" width="20" height="38" rx="9" fill="#805c44"/>
+</g></g><text x="200" y="222" text-anchor="middle" font-family="Nunito,Segoe UI,Arial,sans-serif" font-size="34" fill="#1f1f1f"><tspan font-weight="800">Bårdshaugen</tspan><tspan font-weight="400">Barnehage</tspan></text></svg>
