@@ -1,0 +1,1 @@
+Fraunces (Undercase Type) and Nunito (Vernon Adams et al.) are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org). Files are self-hosted (Fontsource latin subsets), embedded in fonts.css.
