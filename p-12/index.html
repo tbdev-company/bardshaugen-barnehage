@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<meta name="robots" content="noindex, nofollow">
+<title>Bårdshaugen · Barnehage på Skei i Surnadal</title>
+<meta name="description" content="Foreldreeid barnehage på Skei i Surnadal. 46 barn, tre avdelinger, én av dem ved alpinanlegget.">
+<link rel="stylesheet" href="fonts.css">
+<style>
+
+
+:root{--gran:#12301f;--kalk:#f3f1ea;--rod:#e8452c;--rodtekst:#b3301b;--stein:#5f645b;--m:5vw;--gut:24px}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{margin:0;background:var(--kalk);color:var(--gran);font:400 1.125rem/1.56 "Instrument Sans",system-ui,sans-serif}
+img{display:block;width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--rod);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:var(--gran);color:var(--kalk);padding:10px 14px;z-index:20}
+.g{display:grid;grid-template-columns:repeat(4,1fr);column-gap:16px;padding:0 var(--m);max-width:1600px;margin:0 auto}
+@media(min-width:900px){.g{grid-template-columns:repeat(12,1fr);column-gap:var(--gut)}}
+/* header */
+.bar{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px var(--m);max-width:1600px;margin:0 auto}
+.mark{font:700 1.25rem/1 "Bricolage",sans-serif;letter-spacing:-.03em;text-decoration:none}
+.bar nav ul{list-style:none;margin:0;padding:0;display:flex;gap:28px;font-size:1rem}
+.bar nav a{text-decoration:none;border-bottom:1px solid transparent}.bar nav a:hover{border-color:currentColor}
+.menu-btn{display:none}
+@media(max-width:899px){
+ .js .bar nav{position:fixed;inset:0;background:var(--gran);color:var(--kalk);padding:96px var(--m) 32px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.7,0,.2,1);visibility:hidden}
+ .js .bar nav ul{flex-direction:column;gap:6px;font:700 2.6rem/1.15 "Bricolage",sans-serif;letter-spacing:-.03em}
+ .open .bar nav{transform:none;visibility:visible}
+ .menu-btn{display:block;position:relative;z-index:6;font:600 1rem "Instrument Sans",sans-serif;background:none;border:1px solid currentColor;color:inherit;padding:8px 14px;border-radius:999px;cursor:pointer}
+ .open .menu-btn{color:var(--kalk)}
+}
+/* hero */
+.hero{padding-top:6vh;padding-bottom:4vh}
+.word{grid-column:1/-1;font:800 clamp(4rem,15.5vw,15rem)/.86 "Bricolage",sans-serif;letter-spacing:-.055em;margin:0}
+.word .b{display:block}
+.claim{grid-column:1/-1;font:500 clamp(1.5rem,2.6vw,2.4rem)/1.18 "Instrument Sans",sans-serif;letter-spacing:-.015em;margin:5vh 0 0;max-width:22ch}
+@media(min-width:900px){.claim{grid-column:7/12;margin-top:4vh}}
+.heroimg{position:relative;margin:7vh 0 0;grid-column:1/-1}
+@media(min-width:900px){.heroimg{grid-column:3/-1;margin-right:calc(var(--m)*-1)}}
+.cap{font-size:.8125rem;color:var(--stein);margin-top:8px}
+/* facts as sentences */
+.what{padding-top:14vh;padding-bottom:10vh}
+.what h2,.sec-h{grid-column:1/-1;font:600 .875rem/1 "Instrument Sans";letter-spacing:.08em;text-transform:uppercase;color:var(--stein);margin:0 0 32px}
+@media(min-width:900px){.what h2,.sec-h{grid-column:1/3}}
+.what ol{grid-column:1/-1;list-style:none;margin:0;padding:0}
+@media(min-width:900px){.what ol{grid-column:3/12}}
+.what li{font:600 clamp(1.6rem,3.4vw,3.2rem)/1.1 "Bricolage",sans-serif;letter-spacing:-.03em;padding:22px 0;border-top:1px solid rgba(18,48,31,.25)}
+.what li span{display:block;font:400 1rem/1.5 "Instrument Sans";letter-spacing:0;color:var(--stein);margin-top:8px;max-width:46ch}
+/* cases */
+.cases{padding-bottom:10vh}
+.case{grid-column:1/-1;display:grid;grid-template-columns:subgrid;row-gap:20px;margin-bottom:12vh;align-items:end}
+.case figure{margin:0;grid-column:1/-1;position:relative;overflow:hidden}
+.case .t{grid-column:1/-1}
+@media(min-width:900px){
+ .case figure{grid-column:1/8}.case .t{grid-column:9/13}
+ .case.r figure{grid-column:6/13;grid-row:1}.case.r .t{grid-column:1/5;grid-row:1}
+ .case.wide figure{grid-column:1/-1;margin:0 calc(var(--m)*-1)}.case.wide .t{grid-column:3/9}
+}
+.case h3{font:700 clamp(2.2rem,4.6vw,4.4rem)/.95 "Bricolage",sans-serif;letter-spacing:-.04em;margin:0 0 14px}
+.case p{margin:0 0 10px;max-width:40ch}
+.case .tel{font-weight:600;text-decoration:none;border-bottom:2px solid var(--rod)}
+.idx{font:600 .875rem "Instrument Sans";color:var(--rodtekst);display:block;margin-bottom:10px}
+/* owner */
+.own{background:var(--gran);color:var(--kalk);padding:16vh 0}
+.own .sec-h{color:#b9c2b3}
+.own blockquote{grid-column:1/-1;margin:0;font:700 clamp(2.2rem,5.6vw,5.6rem)/1 "Bricolage",sans-serif;letter-spacing:-.045em}
+@media(min-width:900px){.own blockquote{grid-column:3/12}}
+.own p{grid-column:1/-1;max-width:44ch;margin:40px 0 0;color:#dfe5da}
+@media(min-width:900px){.own p{grid-column:7/12}}
+.own em{font-style:normal;color:#ff9a86}
+/* practical */
+.prac{padding:14vh 0}
+.prac table{grid-column:1/-1;border-collapse:collapse;width:100%}
+@media(min-width:900px){.prac table{grid-column:3/12}}
+.prac th,.prac td{text-align:left;font-weight:400;padding:18px 0;border-top:1px solid rgba(18,48,31,.25);vertical-align:top}
+.prac th{width:38%;color:var(--stein);padding-right:16px}
+.prac td{font:600 clamp(1.15rem,1.8vw,1.5rem)/1.3 "Instrument Sans"}
+.prac a{color:var(--rodtekst)}
+.fill{background:#ffe9a8;color:#3d2a00;padding:0 .25em;font-weight:400;font-size:.92em}
+/* contact */
+.kontakt{background:var(--rod);color:#1a0b06;padding:14vh 0 8vh}
+.kontakt h2{grid-column:1/-1;font:800 clamp(3rem,10vw,10rem)/.88 "Bricolage",sans-serif;letter-spacing:-.05em;margin:0 0 8vh}
+.kontakt .c{grid-column:1/-1;margin-bottom:28px}
+@media(min-width:900px){.kontakt .c{grid-column:span 3}}
+.kontakt .c p{margin:0}
+.kontakt .c b{display:block;font-size:.875rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.foot{grid-column:1/-1;font-size:.875rem;margin-top:8vh;border-top:1px solid rgba(26,11,6,.35);padding-top:16px}
+/* motion */
+@media (prefers-reduced-motion:no-preference){
+ @supports (animation-timeline:view()){
+  .case figure img,.heroimg img{animation:settle linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
+  .what li,.case .t{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+ }
+ @keyframes settle{from{opacity:.001;transform:scale(1.06)}to{opacity:1;transform:none}}
+ @keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion:reduce){.bar nav{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#innhold">Gå til innholdet</a>
+<header class="bar">
+  <a class="mark" href="#innhold">Bårdshaugen</a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" hidden>Meny</button>
+  <nav id="nav" aria-label="Hovedmeny"><ul>
+    <li><a href="#avdelinger">Avdelinger</a></li>
+    <li><a href="#eierskap">Eierskap</a></li>
+    <li><a href="#praktisk">Praktisk</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul></nav>
+</header>
+<main id="innhold">
+<section class="hero g" aria-labelledby="h1">
+  <h1 class="word" id="h1"><span class="b">Bårds­haugen</span><span class="b">barnehage</span></h1>
+  <p class="claim">Foreldreeid barnehage på Skei. Én avdeling ligger ved alpinbakken.</p>
+  <figure class="heroimg">
+    <img src="img/dal-640.svg" srcset="img/dal-640.svg 640w, img/dal-1280.svg 1280w" sizes="(min-width:900px) 85vw, 100vw" width="1280" height="549" alt="Bygda i dalbunnen om høsten, med gule bjørker og fjell bak." fetchpriority="high" decoding="async">
+    <figcaption class="cap">Illustrasjon</figcaption>
+  </figure>
+</section>
+
+<section class="what g" aria-labelledby="hw">
+  <h2 id="hw">Kort fortalt</h2>
+  <ol>
+    <li>46 barn fra ett til fem år.<span>Fordelt på Revehiet, Bjørnehiet og Sæterlia.</span></li>
+    <li>15 faste ansatte.<span>5,9 barn per ansatt. Over halvparten er barnehagelærere, og vi oppfyller pedagognormen.</span></li>
+    <li>Åpent 06.45–17.15.<span>Mandag til fredag.</span></li>
+  </ol>
+</section>
+
+<section class="cases g" id="avdelinger" aria-labelledby="ha">
+  <h2 class="sec-h" id="ha">Avdelinger</h2>
+  <article class="case">
+    <figure><img src="img/lekerom-640.svg" srcset="img/lekerom-640.svg 640w, img/lekerom-1152.svg 1152w" sizes="(min-width:900px) 55vw, 100vw" width="1152" height="768" alt="Lyst lekerom med lave bord og stoler i tre." loading="lazy" decoding="async"><figcaption class="cap">Illustrasjon</figcaption></figure>
+    <div class="t"><span class="idx">01</span><h3>Revehiet</h3><p>Avdelingen for de minste barna.</p><p><span class="fill">[Fylles inn: alder og hvordan tilvenningen foregår]</span></p><a class="tel" href="tel:+4795497759">954 97 759</a></div>
+  </article>
+  <article class="case r">
+    <figure><img src="img/baal-576.svg" width="576" height="720" alt="Bål med kjele foran en lavvo i granskogen." loading="lazy" decoding="async"><figcaption class="cap">Illustrasjon</figcaption></figure>
+    <div class="t"><span class="idx">02</span><h3>Bjørnehiet</h3><p>Avdelingen for de eldste barna, de siste årene før skolen.</p><p><span class="fill">[Fylles inn: hva storbarna gjør det siste året]</span></p><a class="tel" href="tel:+4795494816">954 94 816</a></div>
+  </article>
+  <article class="case">
+    <figure><img src="img/hytte-576.svg" width="576" height="720" alt="Tømmerhytte ved skogkanten i en snødekt bakke." loading="lazy" decoding="async"><figcaption class="cap">Illustrasjon</figcaption></figure>
+    <div class="t"><span class="idx">03</span><h3>Sæterlia</h3><p>Friluftsavdelingen. Den holder til ved alpinanlegget i Surnadal.</p><p><span class="fill">[Fylles inn: hvem som går på Sæterlia og hvordan de kommer dit]</span></p><a class="tel" href="tel:+4741079426">410 79 426</a></div>
+  </article>
+</section>
+
+<section class="own" id="eierskap" aria-labelledby="he">
+  <div class="g">
+    <h2 class="sec-h" id="he">Eierskap</h2>
+    <blockquote><p style="margin:0;max-width:none;color:inherit;font:inherit">Foreldrene eier barnehagen. Ingen tar ut utbytte.</p></blockquote>
+    <p>Bårdshaugen Barnehage AS er eid av foreldrene. Pengene <em>brukes i barnehagen, til økt bemanning, miljø og innhold</em>. Styreleder er Espen Røv.</p>
+  </div>
+</section>
+
+<section class="prac g" id="praktisk" aria-labelledby="hp">
+  <h2 class="sec-h" id="hp">Praktisk</h2>
+  <table>
+    <tr><th scope="row">Søke plass</th><td>Gjennom Surnadal kommune. Frist 15. februar.<br><a href="https://foresatt.visma.no/surnadal">Gå til søknaden</a></td></tr>
+    <tr><th scope="row">Åpningstid</th><td>Mandag–fredag 06.45–17.15</td></tr>
+    <tr><th scope="row">Kostpenger</th><td>405 kr i måneden</td></tr>
+    <tr><th scope="row">Foreldrebetaling</th><td><span class="fill">[Fylles inn]</span></td></tr>
+    <tr><th scope="row">Foreldreundersøkelsen 2026</th><td>4,9 av 5 i samlet tilfredshet. 12 svar (27,9 %), så tallet er usikkert.</td></tr>
+  </table>
+</section>
+
+<section class="kontakt" id="kontakt" aria-labelledby="hk">
+  <div class="g">
+    <h2 id="hk">Ring oss.</h2>
+    <div class="c"><p><b>Kontoret</b><a href="tel:+4795767873">957 67 873</a><br><a href="mailto:post@baardshaugen.no">post@baardshaugen.no</a></p></div>
+    <div class="c"><p><b>Daglig leder</b>Reetta Järvinen<br><a href="tel:+4741122302">411 22 302</a></p></div>
+    <div class="c"><p><b>Adresse</b>Bårdshaugvegen 25<br>6650 Surnadal</p></div>
+    <div class="c"><p><b>Jobb</b>Send åpen søknad til<br><a href="mailto:post@baardshaugen.no">post@baardshaugen.no</a></p></div>
+    <p class="foot">Bårdshaugen Barnehage AS · org.nr. 972 179 760 · <a href="https://www.instagram.com/bardshaugen_barnehage/">Instagram</a> · Ingen informasjonskapsler, ingen sporing.</p>
+  </div>
+</section>
+</main>
+<script>
+(()=>{document.documentElement.classList.add('js');const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');if(!b)return;b.hidden=false;
+const set=o=>{document.body.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.textContent=o?'Lukk':'Meny'};
+b.addEventListener('click',()=>set(!document.body.classList.contains('open')));
+n.addEventListener('click',e=>{if(e.target.closest('a'))set(false)});
+addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});})();
+</script>
+</body>
+</html>
