@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<meta name="robots" content="noindex, nofollow">
+<title>Bårdshaugen Barnehage · Revehiet, Bjørnehiet og Sæterlia</title>
+<meta name="description" content="Bårdshaugen Barnehage på Skei i Surnadal. Slik søker du plass, og slik er avdelingene.">
+<link rel="stylesheet" href="fonts.css">
+<style>
+
+
+:root{--krem:#fff7ec;--rev:#e2672f;--revmork:#9e3d12;--bjorn:#4a2e1f;--skog:#1f5b45;--himmel:#cfe5ef;--ink:#2b1a10;--r:28px;--pad:clamp(16px,3vw,32px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--krem);color:var(--ink);font:400 1.1875rem/1.58 "Figtree",system-ui,sans-serif}
+img{display:block;width:100%;height:auto}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:var(--ink);color:var(--krem);padding:8px 12px;z-index:9;border-radius:8px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:800;letter-spacing:-.02em;line-height:1.02;margin:0 0 .4em;font-variation-settings:"SOFT" 100,"WONK" 1}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px var(--pad);max-width:1320px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;font:800 1.2rem/1 "Fraunces",serif;text-decoration:none}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--rev);display:block;position:relative}
+.logo i::after{content:"";position:absolute;right:-6px;bottom:-2px;width:18px;height:18px;border-radius:50%;background:var(--bjorn)}
+.top nav{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.top nav ul{list-style:none;margin:0;padding:0;display:flex;gap:20px;font-weight:600;font-size:1rem;white-space:nowrap}
+.top nav a{text-decoration:none}.top nav a:hover{text-decoration:underline}
+@media(max-width:700px){.top{flex-wrap:wrap}.top nav{width:100%}}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--pad)}
+.block{border-radius:var(--r);padding:clamp(28px,5vw,72px);margin:0 0 20px;position:relative;overflow:hidden}
+.grid{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+@media(min-width:900px){.grid{grid-template-columns:repeat(8,1fr);gap:32px}.c-5{grid-column:span 5}.c-4{grid-column:span 4}.c-3{grid-column:span 3}}
+/* hello */
+.hello{background:var(--himmel)}
+.hello h1{font-size:clamp(2.6rem,6vw,5.4rem)}
+.hello p{font-size:clamp(1.15rem,1.6vw,1.35rem);max-width:30ch;margin:0 0 24px}
+.arch{border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:#e9f2f6}
+.round{border-radius:50%;overflow:hidden;aspect-ratio:1}
+.round img{height:100%;object-fit:cover}
+.cap{font-size:.8rem;font-weight:600;margin-top:8px;opacity:.85}
+.btn{display:inline-block;background:var(--ink);color:var(--krem);font-weight:700;text-decoration:none;padding:14px 22px;border-radius:999px}
+.btn:hover{background:var(--bjorn)}
+.btn.lt{background:var(--krem);color:var(--ink)}
+/* steps */
+.steps{background:#fff;border:2px solid #f0e2cf}
+.steps h2{font-size:clamp(2rem,4.4vw,3.6rem)}
+.steps ol{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:16px;counter-reset:s}
+@media(min-width:900px){.steps ol{grid-template-columns:repeat(3,1fr)}}
+.steps li{counter-increment:s;padding:24px;border-radius:20px;background:var(--krem)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--rev);color:#1a0b04;font:800 1.3rem "Fraunces";margin-bottom:14px}
+.steps li b{display:block;font-size:1.15rem;margin-bottom:4px}
+.steps li p{margin:0;font-size:1.05rem}
+/* departments */
+.rev{background:var(--rev);color:#1a0b04}
+.bjorn{background:var(--bjorn);color:var(--krem)}
+.skog{background:var(--skog);color:var(--krem)}
+.dept h2{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+.dept .kick{font-weight:700;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}
+.dept p{max-width:36ch}
+.dept .tel{font:800 1.6rem "Fraunces";text-decoration:none;border-bottom:3px solid currentColor}
+.fill{background:#fff1c7;color:#3d2a00;padding:0 .25em;border-radius:4px;font-size:.92em}
+/* day */
+.day{background:#fff;border:2px solid #f0e2cf}
+.day h2{font-size:clamp(2rem,4.4vw,3.6rem)}
+.tl{list-style:none;margin:24px 0 0;padding:0;border-left:4px solid var(--rev)}
+.tl li{position:relative;padding:0 0 22px 24px}
+.tl li::before{content:"";position:absolute;left:-12px;top:6px;width:20px;height:20px;border-radius:50%;background:var(--krem);border:4px solid var(--rev)}
+.tl b{display:block;font:800 1.5rem "Fraunces"}
+/* people */
+.folk{background:var(--himmel)}
+.folk h2{font-size:clamp(2rem,4.4vw,3.6rem)}
+.folk dl{margin:0;display:grid;gap:18px}
+.folk dt{font-weight:700}.folk dd{margin:0}
+.big-n{font:800 clamp(3.4rem,8vw,6rem)/1 "Fraunces";color:var(--revmork);display:block}
+/* contact */
+.kontakt{background:var(--ink);color:var(--krem)}
+.kontakt h2{font-size:clamp(2.4rem,6vw,5rem)}
+.kontakt a{color:#ffd0b0}
+.foot{font-size:.9rem;padding:24px var(--pad) 40px;max-width:1320px;margin:0 auto}
+/* motion */
+@media (prefers-reduced-motion:no-preference){
+ @supports (animation-timeline:view()){
+  .block{animation:lift linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+ }
+ @keyframes lift{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#innhold">Gå til innholdet</a>
+<header class="top">
+  <a class="logo" href="#innhold"><i aria-hidden="true"></i>Bårdshaugen</a>
+  <nav aria-label="Hovedmeny"><ul>
+    <li><a href="#soke">Søke plass</a></li>
+    <li><a href="#avdelinger">Avdelinger</a></li>
+    <li><a href="#dagen">Dagen</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul></nav>
+</header>
+<main id="innhold" class="wrap">
+  <section class="block hello" aria-labelledby="h1">
+    <div class="grid">
+      <div class="c-4">
+        <h1 id="h1">Barnehagen midt på Skei.</h1>
+        <p>Vi er en barnehage på Skei i Surnadal med 46 barn og tre avdelinger. Foreldrene eier barnehagen.</p>
+        <a class="btn" href="#soke">Slik søker du plass</a>
+      </div>
+      <figure class="c-4" style="margin:0">
+        <div class="arch"><img src="img/duo-640.svg" srcset="img/duo-640.svg 640w, img/duo-1280.svg 1280w" sizes="(min-width:900px) 45vw, 100vw" width="1280" height="720" alt="Akvarell av en rev og en bjørn som sitter i en fjellbakke over dalen." fetchpriority="high" decoding="async"></div>
+        <figcaption class="cap">Illustrasjon. Reven og bjørnen er navnene på to av avdelingene.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block steps" id="soke" aria-labelledby="hs">
+    <h2 id="hs">Slik søker du plass</h2>
+    <ol>
+      <li><b>Ring oss gjerne først</b><p>Kontoret svarer på <a href="tel:+4795767873">957 67 873</a>. Spør om det er ledig plass.</p></li>
+      <li><b>Søk gjennom kommunen</b><p>Søknaden sender du til Surnadal kommune på <a href="https://foresatt.visma.no/surnadal">foresatt.visma.no/surnadal</a>.</p></li>
+      <li><b>Husk fristen</b><p>Hovedopptaket har frist 15. februar. <span class="fill">[Fylles inn: når svaret kommer]</span></p></li>
+    </ol>
+  </section>
+
+  <div id="avdelinger">
+  <section class="block dept rev" aria-labelledby="hr">
+    <div class="grid">
+      <div class="c-5"><p class="kick">For de minste</p><h2 id="hr">Revehiet</h2>
+        <p>Revehiet er avdelingen for de yngste barna. <span class="fill">[Fylles inn: alder, antall barn og hvordan dere gjør oppstarten]</span></p>
+        <p><a class="tel" href="tel:+4795497759">954 97 759</a></p></div>
+      <figure class="c-3" style="margin:0"><div class="round"><img src="img/rev-640.svg" width="640" height="480" alt="Akvarell av en rev som løper foran et lite rødt hus." loading="lazy" decoding="async"></div><figcaption class="cap">Illustrasjon</figcaption></figure>
+    </div>
+  </section>
+  <section class="block dept bjorn" aria-labelledby="hb">
+    <div class="grid">
+      <figure class="c-3" style="margin:0"><div class="round"><img src="img/bjorn-640.svg" width="640" height="480" alt="Akvarell av en bjørn med sekk på vei inn i høstskogen." loading="lazy" decoding="async"></div><figcaption class="cap">Illustrasjon</figcaption></figure>
+      <div class="c-5"><p class="kick">For de eldste</p><h2 id="hb">Bjørnehiet</h2>
+        <p>Bjørnehiet er avdelingen for de eldste barna, fram til de begynner på skolen. <span class="fill">[Fylles inn: hva det siste året før skolen inneholder]</span></p>
+        <p><a class="tel" href="tel:+4795494816">954 94 816</a></p></div>
+    </div>
+  </section>
+  <section class="block dept skog" aria-labelledby="hsa">
+    <div class="grid">
+      <div class="c-5"><p class="kick">Friluft</p><h2 id="hsa">Sæterlia</h2>
+        <p>Sæterlia ligger ved alpinanlegget i Surnadal. Det er friluftsavdelingen vår. <span class="fill">[Fylles inn: hvem som går der, og hvordan barna kommer seg dit]</span></p>
+        <p><a class="tel" href="tel:+4741079426">410 79 426</a></p></div>
+      <figure class="c-3" style="margin:0"><div class="arch"><img src="img/sno-640.svg" srcset="img/sno-640.svg 640w, img/sno-1280.svg 1280w" sizes="(min-width:900px) 30vw, 100vw" width="1280" height="720" alt="Akvarell av en rev og en bjørn i en snødekt bakke på vei mot en hytte." loading="lazy" decoding="async"></div><figcaption class="cap">Illustrasjon</figcaption></figure>
+    </div>
+  </section>
+  </div>
+
+  <section class="block day" id="dagen" aria-labelledby="hd">
+    <div class="grid">
+      <div class="c-4"><h2 id="hd">Sånn er dagen</h2><p>Vi har åpent mandag til fredag.</p></div>
+      <ol class="tl c-4">
+        <li><b>06.45</b>Vi åpner.</li>
+        <li><b><span class="fill">[Fylles inn]</span></b><span class="fill">[Fylles inn: dagsrytmen, med faste tider for måltider og utetid]</span></li>
+        <li><b>17.15</b>Vi stenger.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block folk" aria-labelledby="hf">
+    <div class="grid">
+      <div class="c-3"><span class="big-n">15</span><p>faste ansatte. Det blir 5,9 barn per voksen.</p></div>
+      <div class="c-5"><h2 id="hf">De voksne</h2>
+        <dl>
+          <div><dt>Daglig leder</dt><dd>Reetta Järvinen, <a href="tel:+4741122302">411 22 302</a></dd></div>
+          <div><dt>Utdanning</dt><dd>56,8 % av de ansatte er barnehagelærere. Barnehagen oppfyller pedagognormen.</dd></div>
+          <div><dt>Foreldrene sier</dt><dd>4,9 av 5 i samlet tilfredshet i foreldreundersøkelsen 2026. Bare 12 svarte, så tallet er usikkert.</dd></div>
+          <div><dt>Eierskap</dt><dd>Foreldrene eier Bårdshaugen Barnehage AS. Det tas ikke ut utbytte. Pengene går til bemanning, miljø og innhold.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block kontakt" id="kontakt" aria-labelledby="hk">
+    <div class="grid">
+      <div class="c-4"><h2 id="hk">Snakk med oss</h2><p>Bårdshaugvegen 25, 6650 Surnadal</p><p><a class="btn lt" href="tel:+4795767873">Ring 957 67 873</a></p></div>
+      <div class="c-4"><p><a href="mailto:post@baardshaugen.no">post@baardshaugen.no</a></p><p>Åpent 06.45–17.15. Kostpenger 405 kr i måneden. Foreldrebetaling <span class="fill">[Fylles inn]</span>.</p><p>Styreleder Espen Røv, <a href="tel:+4793268352">932 68 352</a>.</p><p>Åpne søknader kan sendes til post@baardshaugen.no.</p></div>
+    </div>
+  </section>
+</main>
+<p class="foot">Bårdshaugen Barnehage AS · org.nr. 972 179 760 · <a href="https://www.instagram.com/bardshaugen_barnehage/">Instagram</a> · Alle bilder er illustrasjoner. Ingen informasjonskapsler eller sporing.</p>
+</body>
+</html>
