@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<meta name="robots" content="noindex, nofollow">
+<title>Bårdshaugen Barnehage · Skei, Surnadal</title>
+<meta name="description" content="Bårdshaugen Barnehage på Skei i Surnadal. Åpent 06.45–17.15. Tre avdelinger, én ved alpinanlegget.">
+<meta name="theme-color" content="#0f0e0c">
+<link rel="preload" as="image" href="img/hero-800.svg" imagesrcset="img/hero-800.svg 800w, img/hero-1280.svg 1280w" imagesizes="100vw">
+<link rel="stylesheet" href="fonts.css">
+<style>
+
+
+
+
+:root{--natt:#0f0e0c;--aske:#e9e4da;--dim:#a39d92;--glor:#e07a3f;--mose:#4f5b3a;--pad:clamp(20px,3vw,40px)}
+*{box-sizing:border-box}
+html{background:var(--natt);overflow-x:clip}
+body{margin:0;color:var(--aske);background:var(--natt);font:400 1.0625rem/1.6 "Sans",system-ui,sans-serif}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--glor);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:var(--aske);color:var(--natt);padding:8px 12px;z-index:30}
+.meta{font:500 .75rem/1.4 "Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+/* bar */
+.bar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);background:linear-gradient(rgba(15,14,12,.7),rgba(15,14,12,0))}
+.bar .logo{font:400 1.35rem/1 "Serif",serif;text-decoration:none}
+.bar .r{display:flex;gap:20px;align-items:center}
+.bar .r a{text-decoration:none}
+.bar .r a:hover{color:var(--glor)}
+/* hero */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden}
+.hero .img{position:absolute;inset:0}
+.hero .img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,14,12,.1) 30%,rgba(15,14,12,.85))}
+.hero h1{position:absolute;left:var(--pad);right:var(--pad);bottom:12vh;margin:0;font:400 clamp(4.2rem,19vw,17rem)/.86 "Serif",serif;letter-spacing:-.03em}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .l span{display:block}
+.hero h1 em{font-style:italic;color:var(--glor);padding-left:.6em}
+.hero .meta{position:absolute;left:var(--pad);bottom:4vh;right:var(--pad);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ill{position:absolute;right:var(--pad);top:72px;z-index:2}
+/* intro */
+.intro{padding:20vh var(--pad) 16vh;display:grid;grid-template-columns:repeat(12,1fr);gap:0 32px}
+.intro .meta{grid-column:1/-1;margin-bottom:28px}
+.intro p.big{grid-column:1/-1;margin:0;font:400 clamp(2rem,4.6vw,4.4rem)/1.04 "Serif",serif;letter-spacing:-.015em}
+.intro p.big em{color:var(--glor)}
+.intro p.small{grid-column:1/-1;max-width:40ch;color:var(--dim);margin:40px 0 0}
+@media(min-width:900px){.intro .meta{grid-column:1/3}.intro p.big{grid-column:3/12}.intro p.small{grid-column:8/12}}
+/* strip */
+.strip{height:340vh;position:relative;view-timeline:--strip block}
+.strip .pin{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.strip h2{padding:0 var(--pad);margin:0 0 4vh;font:400 clamp(2rem,4vw,3.6rem)/1 "Serif",serif}
+.strip h2 em{color:var(--glor)}
+.track{display:flex;gap:24px;padding:0 var(--pad);width:max-content;will-change:transform}
+.card{width:min(72vw,440px);flex:none}
+.card .ph{position:relative;aspect-ratio:3/4;overflow:hidden;background:#1c1a17}
+.card .ph .meta{position:absolute;left:12px;top:12px;color:var(--aske);background:rgba(15,14,12,.6);padding:4px 7px}
+.card h3{font:400 1.9rem/1.05 "Serif",serif;margin:16px 0 6px}
+.card p{margin:0;color:var(--dim);font-size:1rem;max-width:34ch}
+.fill{background:#3a2f1f;color:#ffdcb8;padding:0 .25em;font-size:.94em}
+/* rows */
+.rows{padding:18vh var(--pad) 10vh}
+.rows .meta{margin-bottom:5vh}
+.row{display:grid;grid-template-columns:1fr;gap:12px 32px;padding:5vh 0;border-top:1px solid #36322c}
+.row:last-child{border-bottom:1px solid #36322c}
+.row .n{font:500 .75rem "Mono";color:var(--glor)}
+.row h3{margin:0;font:400 clamp(3rem,9vw,8rem)/.9 "Serif",serif;letter-spacing:-.02em}
+.row p{margin:0;color:var(--dim);max-width:38ch}
+.row a{color:var(--aske);font-family:"Mono";font-size:.95rem}
+@media(min-width:900px){.row{grid-template-columns:80px 1fr 340px;align-items:end}}
+/* figures */
+.figs{padding:16vh var(--pad);display:grid;grid-template-columns:1fr;gap:56px}
+@media(min-width:900px){.figs{grid-template-columns:repeat(3,1fr)}}
+.fig b{display:block;font:400 clamp(4.5rem,10vw,9rem)/.9 "Serif",serif;color:var(--aske)}
+.fig span{display:block;margin-top:14px;color:var(--dim);max-width:28ch}
+.figs .note{grid-column:1/-1;color:var(--dim);font-size:.9rem;max-width:60ch;border-top:1px solid #36322c;padding-top:16px}
+/* owner */
+.own{padding:14vh var(--pad);background:var(--aske);color:var(--natt)}
+.own .meta{color:#5d574d;margin-bottom:5vh}
+.own p.big{margin:0;font:400 clamp(2.2rem,5.4vw,5.4rem)/1 "Serif",serif;max-width:18ch}
+.own p.big em{color:#a3461b}
+.own p.s{max-width:46ch;margin:5vh 0 0;color:#3b362f}
+/* contact */
+.contact{padding:18vh var(--pad) 6vh}
+.contact h2{margin:0 0 8vh;font:400 clamp(3.4rem,12vw,12rem)/.88 "Serif",serif;letter-spacing:-.02em}
+.contact h2 a{text-decoration:none;border-bottom:2px solid var(--glor)}
+.cg{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:900px){.cg{grid-template-columns:repeat(4,1fr)}}
+.cg p{margin:6px 0 0}
+.cg a{text-decoration:none;border-bottom:1px solid #6b655b}
+.btm{margin-top:12vh;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid #36322c;padding-top:18px}
+/* motion: transform/opacity only */
+@media (prefers-reduced-motion:no-preference){
+ .hero h1 .l span{animation:rise 1.1s cubic-bezier(.2,.7,.1,1) both}
+ .hero h1 .l:nth-child(2) span{animation-delay:.12s}
+ @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+ @supports (animation-timeline:view()){
+  .hero .img img{animation:drift linear both;animation-timeline:scroll(root);animation-range:0 100vh}
+  .track{animation:slide linear both;animation-timeline:--strip;animation-range:contain 0% contain 100%}
+  .card .ph img{animation:zoom linear both;animation-timeline:view(inline);animation-range:cover 0% cover 100%}
+  .row,.fig,.intro p{animation:fade linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+ }
+ @keyframes drift{to{transform:scale(1.08) translateY(4%)}}
+ @keyframes slide{to{transform:translateX(calc(-100% + 100vw))}}
+ @keyframes zoom{from{transform:scale(1.18)}to{transform:scale(1)}}
+ @keyframes fade{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+}
+@supports not (animation-timeline:view()){.strip{height:auto}.strip .pin{position:static;height:auto;padding:14vh 0}.track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory}.card{scroll-snap-align:start}}
+@media (prefers-reduced-motion:reduce){.strip{height:auto}.strip .pin{position:static;height:auto;padding:14vh 0}.track{width:auto;overflow-x:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#innhold">Gå til innholdet</a>
+<header class="bar">
+  <a class="logo" href="#innhold">Bårdshaugen</a>
+  <nav class="r meta" aria-label="Snarveier"><a href="#avdelinger">Avdelinger</a><a href="tel:+4795767873">957 67 873</a></nav>
+</header>
+<main id="innhold">
+<section class="hero" aria-labelledby="h1">
+  <div class="img"><img src="img/hero-800.svg" srcset="img/hero-800.svg 800w, img/hero-1280.svg 1280w" sizes="(orientation:portrait) 180vh, 100vw" width="1280" height="720" alt="Dalen før soloppgang, med et hus med lys i vinduene ved elva." fetchpriority="high" decoding="async"></div>
+  <span class="meta ill">Illustrasjon</span>
+  <h1 id="h1"><span class="l"><span>Bårdshaugen</span></span><span class="l"><span><em>barnehage</em></span></span></h1>
+  <div class="meta"><span>Skei, Surnadal</span><span>Åpent 06.45–17.15</span><span>46 barn · 3 avdelinger</span></div>
+</section>
+
+<section class="intro" aria-label="Om barnehagen">
+  <p class="meta">Om oss</p>
+  <p class="big">Barnehagen ligger i sentrum på Skei. Den tredje avdelingen ligger ved <em>alpinanlegget</em>.</p>
+  <p class="small">Bårdshaugen er eid av foreldrene og tar ikke ut utbytte. Målet er et godt sted å være for barn og voksne.</p>
+</section>
+
+<section class="strip" aria-labelledby="hs">
+  <div class="pin">
+    <h2 id="hs">Fra 06.45 til <em>17.15</em></h2>
+    <div class="track">
+      <article class="card"><div class="ph"><img src="img/morgen-540.svg" width="540" height="720" alt="Dalen i blått morgenlys." loading="lazy" decoding="async"><span class="meta">06.45 · Illustrasjon</span></div><h3>Vi åpner</h3><p>Store deler av året er det mørkt ute når vi åpner.</p></article>
+      <article class="card"><div class="ph"><img src="img/dal-540.svg" width="540" height="720" alt="Elv gjennom gul bjørkeskog under fjell." loading="lazy" decoding="async"><span class="meta">Formiddag · Illustrasjon</span></div><h3>Ute</h3><p><span class="fill">[Fylles inn: hvordan formiddagen brukes]</span></p></article>
+      <article class="card"><div class="ph"><img src="img/baal-540.svg" width="540" height="720" alt="Bål med kjele foran en lavvo." loading="lazy" decoding="async"><span class="meta">Sæterlia · Illustrasjon</span></div><h3>Bålplassen</h3><p><span class="fill">[Fylles inn: hva barna gjør i Sæterlia]</span></p></article>
+      <article class="card"><div class="ph"><img src="img/hytte-540.svg" width="540" height="720" alt="Tømmerhytte i snøen i skumringen." loading="lazy" decoding="async"><span class="meta">17.15 · Illustrasjon</span></div><h3>Vi stenger</h3><p>Siste henting er 17.15, mandag til fredag.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="rows" id="avdelinger" aria-labelledby="ha">
+  <h2 class="meta" id="ha">Avdelinger</h2>
+  <div class="row"><span class="n">01</span><h3>Revehiet</h3><p>De minste barna. <span class="fill">[Fylles inn: alder]</span><br><a href="tel:+4795497759">954 97 759</a></p></div>
+  <div class="row"><span class="n">02</span><h3>Bjørnehiet</h3><p>De eldste barna, fram til skolestart.<br><a href="tel:+4795494816">954 94 816</a></p></div>
+  <div class="row"><span class="n">03</span><h3>Sæterlia</h3><p>Friluftsavdelingen ved alpinanlegget i Surnadal.<br><a href="tel:+4741079426">410 79 426</a></p></div>
+</section>
+
+<section class="figs" aria-label="Tall">
+  <div class="fig"><b>46</b><span>barn mellom ett og fem år</span></div>
+  <div class="fig"><b>5,9</b><span>barn per ansatt</span></div>
+  <div class="fig"><b>4,9</b><span>av 5 i samlet tilfredshet, foreldreundersøkelsen 2026</span></div>
+  <p class="note">15 faste ansatte. 56,8 % er barnehagelærere, og barnehagen oppfyller pedagognormen. I foreldreundersøkelsen svarte bare 12 foreldre (27,9 %), så det tallet er usikkert. Kilde: Utdanningsdirektoratet.</p>
+</section>
+
+<section class="own" aria-labelledby="ho">
+  <h2 class="meta" id="ho">Eierskap</h2>
+  <p class="big">Overskuddet blir i <em>barnehagen</em>.</p>
+  <p class="s">Bårdshaugen Barnehage AS eies av foreldrene og betaler ikke utbytte. Pengene brukes til økt bemanning, miljø og innhold. Styreleder er Espen Røv.</p>
+</section>
+
+<section class="contact" aria-labelledby="hk">
+  <h2 id="hk"><a href="tel:+4795767873">957 67 873</a></h2>
+  <div class="cg">
+    <div><p class="meta">Søke plass</p><p>Gjennom Surnadal kommune, frist 15. februar.<br><a href="https://foresatt.visma.no/surnadal">Til søknaden</a></p></div>
+    <div><p class="meta">Daglig leder</p><p>Reetta Järvinen<br><a href="tel:+4741122302">411 22 302</a></p></div>
+    <div><p class="meta">Adresse</p><p>Bårdshaugvegen 25<br>6650 Surnadal</p></div>
+    <div><p class="meta">Praktisk</p><p>Kostpenger 405 kr/mnd.<br>Foreldrebetaling <span class="fill">[Fylles inn]</span></p></div>
+  </div>
+  <div class="btm meta"><span>Bårdshaugen Barnehage AS · 972 179 760</span><a href="mailto:post@baardshaugen.no">post@baardshaugen.no</a><a href="https://www.instagram.com/bardshaugen_barnehage/">Instagram</a><span>Ingen sporing</span></div>
+</section>
+</main>
+</body>
+</html>
