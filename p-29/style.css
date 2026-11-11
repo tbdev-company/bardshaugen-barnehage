@@ -1,0 +1,48 @@
+@import url('../fonts-v9/fonts.css');
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scroll-behavior:smooth}
+body{margin:0;overflow-x:clip;line-height:1.55}
+img,svg{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.15em}
+.skip{position:absolute;left:-9999px;top:8px;z-index:99;background:#111;color:#fff;padding:10px 14px}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--focus,#ffbf47);outline-offset:3px}
+.tel{white-space:nowrap}
+.fill{background:#ffe27a;color:#2a2100;padding:.05em .35em;border-radius:4px;font-style:normal;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.pic{margin:0}.pic figcaption{font-size:.8rem;margin-top:6px;opacity:.85}
+.kw{background-image:linear-gradient(var(--kwbg,#ffe27a),var(--kwbg,#ffe27a));background-repeat:no-repeat;background-size:0 100%;background-position:0 88%;padding:0 .08em;border-radius:.15em;transition:background-size .6s,color .5s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.kw.on{background-size:100% 100%;color:var(--kwfg,#111)}
+html:not(.js) .kw{background-size:100% 100%;color:var(--kwfg,#111)}
+@media (prefers-reduced-motion:no-preference){
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.kw{background-size:100% 100%;color:var(--kwfg,#111)}}
+@supports (animation-timeline: scroll()){@media (prefers-reduced-motion:no-preference){[data-px]{animation:pxm linear both;animation-timeline:scroll(root);animation-range:0 100vh}@keyframes pxm{to{transform:translate3d(0,var(--pxd,12vh),0)}}}}
+
+body{font-family:'Bricolage',system-ui,sans-serif;background:#172117;color:#f3ead6;--focus:#e3b15a;--kwbg:#e3b15a;--kwfg:#172117}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;margin:0 0 .45em}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02}h2{font-size:clamp(1.6rem,3vw,2.3rem)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;position:sticky;top:0;background:#172117ee;z-index:20;border-bottom:1px solid #3a4a36}
+.logo{text-decoration:none;font-weight:800}.menu{display:none;font:inherit;background:#e3b15a;color:#172117;border:0;padding:8px 14px;font-weight:700}
+.layout{display:grid;grid-template-columns:200px 1fr}
+#nav{position:sticky;top:64px;align-self:start;padding:28px 16px;border-right:1px dashed #5a6b54}
+#nav ol{list-style:none;margin:0;padding:0;border-left:2px solid #5a6b54}
+#nav a{display:block;padding:10px 0 10px 16px;text-decoration:none;position:relative}
+#nav a::before{content:"";width:10px;height:10px;background:#e3b15a;border-radius:50%;position:absolute;left:-6px;top:16px}
+main{padding:24px 0 80px}
+.hero{position:relative;min-height:70vh;display:grid;align-items:end;overflow:hidden}
+.hero .pic,.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.75}
+.hin{position:relative;padding:80px 0 48px}
+.open{display:inline-flex;gap:8px;background:#e3b15a;color:#172117;padding:6px 12px;font-weight:700}
+.sec{padding:72px 0;border-top:1px dashed #5a6b54}
+.btn{display:inline-block;background:#e3b15a;color:#172117;text-decoration:none;font-weight:800;padding:12px 18px}
+.depts{list-style:none;padding:0;display:grid;gap:16px}.dept{border:1px solid #5a6b54;padding:20px;background:#1e2b1e}
+.tbl div{display:grid;grid-template-columns:180px 1fr;padding:10px 0;border-bottom:1px solid #5a6b54}.tbl dt{font-weight:700}.tbl dd{margin:0}
+.nums{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}.nums b{display:block;font-size:2.6rem;color:#e3b15a}
+.story{font-size:1.4rem;max-width:28ch;line-height:1.4}
+.foot{background:#0e160e;padding:40px 0}
+.map{width:min(520px,100%);margin:20px 0}
+.tasks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.tasks a{border:1px solid #e3b15a;padding:12px;text-decoration:none;font-weight:700}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.js .menu{display:block}.js #nav{display:none;position:static;border:0}#nav.open{display:block}.tbl div{grid-template-columns:1fr}html:not(.js) #nav{border:0;padding:8px 20px}#nav ol{display:flex;flex-wrap:wrap;border:0;gap:8px}#nav a{padding:8px 10px}#nav a::before{display:none}}
