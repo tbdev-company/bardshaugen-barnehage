@@ -1,0 +1,45 @@
+@import url('../fonts-v9/fonts.css');
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scroll-behavior:smooth}
+body{margin:0;overflow-x:clip;line-height:1.55}
+img,svg{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.15em}
+.skip{position:absolute;left:-9999px;top:8px;z-index:99;background:#111;color:#fff;padding:10px 14px}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--focus,#ffbf47);outline-offset:3px}
+.tel{white-space:nowrap}
+.fill{background:#ffe27a;color:#2a2100;padding:.05em .35em;border-radius:4px;font-style:normal;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.pic{margin:0}.pic figcaption{font-size:.8rem;margin-top:6px;opacity:.85}
+.kw{background-image:linear-gradient(var(--kwbg,#ffe27a),var(--kwbg,#ffe27a));background-repeat:no-repeat;background-size:0 100%;background-position:0 88%;padding:0 .08em;border-radius:.15em;transition:background-size .6s,color .5s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.kw.on{background-size:100% 100%;color:var(--kwfg,#111)}
+html:not(.js) .kw{background-size:100% 100%;color:var(--kwfg,#111)}
+@media (prefers-reduced-motion:no-preference){
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.kw{background-size:100% 100%;color:var(--kwfg,#111)}}
+@supports (animation-timeline: scroll()){@media (prefers-reduced-motion:no-preference){[data-px]{animation:pxm linear both;animation-timeline:scroll(root);animation-range:0 100vh}@keyframes pxm{to{transform:translate3d(0,var(--pxd,12vh),0)}}}}
+
+body{font-family:'Nunito',system-ui,sans-serif;background:#f6efe2;color:#2a1c12;--focus:#7a2e0e;--kwbg:#f3c15e;--kwfg:#2a1c12}
+h1,h2,h3,.logo,.portal h2{font-family:'Baloo',system-ui,sans-serif;font-weight:800;margin:0 0 .35em;line-height:1.05}
+h1{font-size:clamp(2.4rem,6vw,4.4rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+.hand{font-family:'Caveat',cursive;font-weight:700}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;position:sticky;top:0;z-index:20;background:#2a1c12;color:#fff}
+.logo{text-decoration:none;color:#fff}.menu{display:none;font:inherit;border:0;background:#f3c15e;color:#2a1c12;padding:8px 12px;font-weight:800}
+#nav{display:flex;gap:8px;flex-wrap:wrap}#nav a{color:#fff;text-decoration:none;font-weight:800;padding:8px}
+.hero{padding:40px 0 24px;text-align:center}
+.portals{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding-bottom:48px}
+.portal{display:block;text-decoration:none;padding:32px 20px;border-radius:28px 40px 24px 36px;min-height:280px;color:#2a1c12}
+.p-rev{background:#e8893a}.p-bj{background:#c4a07a}.p-sa{background:#3f7a58;color:#fff}
+.portal p{margin:0}
+.tasks{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0}.tasks a{background:#2a1c12;color:#fff;text-decoration:none;padding:10px 14px;font-weight:800;border-radius:999px}
+.sec{padding:48px 0}.btn{display:inline-block;background:#2a1c12;color:#fff;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:999px}
+.depts{list-style:none;padding:0}.office{margin-top:16px}
+.tbl div{display:grid;grid-template-columns:180px 1fr;padding:8px 0;border-bottom:1px solid #d7cbb8}.tbl dt{font-weight:800}.tbl dd{margin:0}
+.world{min-height:40vh;padding:48px 0 24px;color:#2a1c12}
+.world.rev{background:#e8893a}.world.bj{background:#c4a07a}.world.sa{background:#3f7a58;color:#fff}
+.back{display:inline-block;margin-bottom:16px;font-weight:800}
+.foot{background:#2a1c12;color:#fff;padding:36px 0}.foot a{color:#fff}
+.open{display:inline-flex;gap:8px;background:#2a1c12;color:#fff;padding:6px 12px;font-weight:800}
+@media(max-width:800px){.portals{grid-template-columns:1fr}.js .menu{display:block}.js #nav{display:none;flex-direction:column;position:absolute;right:12px;top:100%;background:#2a1c12;padding:12px}#nav.open{display:flex}.tbl div{grid-template-columns:1fr}}
