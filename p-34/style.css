@@ -1,0 +1,41 @@
+@import url('../fonts-v9/fonts.css');
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip;scroll-behavior:smooth}
+body{margin:0;overflow-x:clip;line-height:1.55}
+img,svg{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.15em}
+.skip{position:absolute;left:-9999px;top:8px;z-index:99;background:#111;color:#fff;padding:10px 14px}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--focus,#ffbf47);outline-offset:3px}
+.tel{white-space:nowrap}
+.fill{background:#ffe27a;color:#2a2100;padding:.05em .35em;border-radius:4px;font-style:normal;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.pic{margin:0}.pic figcaption{font-size:.8rem;margin-top:6px;opacity:.85}
+.kw{background-image:linear-gradient(var(--kwbg,#ffe27a),var(--kwbg,#ffe27a));background-repeat:no-repeat;background-size:0 100%;background-position:0 88%;padding:0 .08em;border-radius:.15em;transition:background-size .6s,color .5s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.kw.on{background-size:100% 100%;color:var(--kwfg,#111)}
+html:not(.js) .kw{background-size:100% 100%;color:var(--kwfg,#111)}
+@media (prefers-reduced-motion:no-preference){
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.kw{background-size:100% 100%;color:var(--kwfg,#111)}}
+@supports (animation-timeline: scroll()){@media (prefers-reduced-motion:no-preference){[data-px]{animation:pxm linear both;animation-timeline:scroll(root);animation-range:0 100vh}@keyframes pxm{to{transform:translate3d(0,var(--pxd,12vh),0)}}}}
+
+body{font-family:'Work Sans',system-ui,sans-serif;background:#1a1a1a;color:#111;--focus:#111;--kwbg:#111;--kwfg:#ffe100}
+h1,h2,.sign,.logo{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.95;margin:0}
+.top{background:#111;color:#ffe100;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20}
+.logo{text-decoration:none;font-size:1.3rem;color:#ffe100}.menu{display:none;font:inherit;background:#ffe100;color:#111;border:0;padding:8px 12px;font-weight:700}
+#nav{display:flex;gap:10px}#nav a{color:#ffe100;text-decoration:none;font-weight:700;font-family:'Work Sans',sans-serif}
+.stack{display:flex;flex-direction:column;gap:14px;padding:20px}
+.sign{display:block;text-decoration:none;padding:28px 24px;color:#111}
+.sign.y{background:#ffe100}.sign.g{background:#0b6b3a;color:#fff}.sign.b{background:#0a3d8f;color:#fff}.sign.w{background:#efefef}
+.sign h1,.sign h2{font-size:clamp(2.4rem,8vw,5.5rem)}
+.sign p{font-family:'Work Sans',sans-serif;text-transform:none;letter-spacing:0;margin:.6em 0 0;max-width:44ch;font-size:1.05rem}
+.sign .dir{font-size:clamp(1.6rem,4vw,2.6rem);display:flex;justify-content:space-between;align-items:baseline}
+.open{font-family:'Work Sans',sans-serif;font-weight:800}
+.btn{display:inline-block;background:#111;color:#ffe100;text-decoration:none;font-weight:800;padding:12px 16px;margin-top:10px;text-transform:uppercase;font-family:'Anton',sans-serif;letter-spacing:.04em}
+.depts{list-style:none;padding:0;display:grid;gap:10px}.dept{background:#fff;padding:16px}
+.tbl{color:#111}.tbl div{display:grid;grid-template-columns:180px 1fr;padding:8px 0;border-bottom:2px solid #111}.tbl dt{font-weight:800}.tbl dd{margin:0}
+.story{font-family:'Work Sans',sans-serif;text-transform:none;font-size:1.2rem;max-width:36ch}
+.foot{background:#111;color:#ffe100;padding:32px 0}.foot a{color:#ffe100}
+@media(max-width:800px){.js .menu{display:block}.js #nav{display:none;position:absolute;top:100%;right:0;left:0;background:#111;padding:12px;flex-direction:column}#nav.open{display:flex}.tbl div{grid-template-columns:1fr}}
