@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vi åpner kvart på sju. Det er ofte mørkt. – Bårdshaugen Barnehage</title>
+<meta name="description" content="Bårdshaugen Barnehage åpner klokken 06.45, mandag til fredag. Midt på Skei i Surnadal.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root{--wine:#5c1f28;--ink:#22181a;--cream:#f7f1e8;--paper:#fffdf8;--dust:#c9a07a;--focus:#e8b85c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.12rem/1.6 Figtree,system-ui,sans-serif}
+a{color:var(--wine)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--focus)}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--focus);color:var(--ink);padding:.5rem .8rem;z-index:40}
+img{max-width:100%;height:auto;display:block}
+/* meisei-like floating bar */
+.bar{position:sticky;top:.6rem;z-index:20;width:min(1180px,calc(100% - 1.2rem));margin:.6rem auto 0;background:#fff;border-radius:999px;box-shadow:0 6px 24px rgba(34,24,26,.12);display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.45rem .7rem .45rem 1rem}
+.logo{text-decoration:none;color:var(--ink);font-weight:600;line-height:1.15}
+.logo small{display:block;font-weight:400;font-size:.75rem;color:#5c4a46}
+.bar nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.2rem .85rem;font-size:.92rem}
+.bar nav a{color:var(--ink);text-decoration:none;font-weight:600}
+.bar nav a:hover{text-decoration:underline}
+.mb{display:none;border:0;background:var(--wine);color:#fff;border-radius:999px;padding:.4rem .75rem;font:600 .85rem Figtree,sans-serif}
+@media(max-width:799px){
+  .mb{display:block}
+  .bar{flex-wrap:wrap;border-radius:22px}
+  .bar nav{display:none;width:100%}
+  .bar nav.open{display:block}
+  .bar nav ul{flex-direction:column;padding:.3rem .6rem .7rem}
+}
+/* full-bleed photo opening, type at the bottom */
+.hero{position:relative;min-height:100svh;color:#fff;display:flex;align-items:flex-end;margin-top:-3.4rem}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,24,26,.15) 30%,rgba(34,24,26,.62) 100%)}
+.crayon{position:absolute;inset:0;pointer-events:none;z-index:2}
+.crayon path{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.hero.in .crayon path,html.rm .crayon path{stroke-dashoffset:0;transition:stroke-dashoffset 1.6s ease}
+.hero .txt{position:relative;z-index:3;padding:0 6vw 16vh;max-width:none}
+h1{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:clamp(2.5rem,8vw,3.6rem);line-height:1.08;margin:0;letter-spacing:-.02em;text-shadow:0 2px 16px rgba(0,0,0,.3);max-width:11ch}
+@media(min-width:800px){h1{font-size:clamp(3rem,5.6vw,4.6rem);max-width:14ch}}
+.lab{display:inline-block;margin-top:.8rem;background:rgba(255,255,255,.92);color:var(--ink);font-size:.8rem;padding:.15rem .45rem}
+/* floating info card, borrowed lightly from Meisei */
+.info{position:relative;z-index:4;width:min(640px,calc(100% - 2rem));margin:-4.5rem auto 3rem;background:#fff;border-radius:1.2rem;padding:1.1rem 1.2rem;box-shadow:0 12px 40px rgba(34,24,26,.15)}
+.info p{margin:0}
+#apent{font-family:Newsreader,serif;font-size:1.45rem;margin:0 0 .35rem}
+/* essay */
+.essay{width:min(1100px,calc(100% - 2rem));margin:0 auto;display:grid;gap:12vh;padding:2rem 0 5rem}
+.doodle{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.shot{position:relative}
+.doodle path,.doodle circle{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.shot.in .doodle path,.shot.in .doodle circle,html.rm .doodle path,html.rm .doodle circle{stroke-dashoffset:0;transition:stroke-dashoffset 1.4s ease}
+.shot .photo-wrap{position:relative;overflow:hidden}
+.doodle{overflow:visible}
+@media (prefers-reduced-motion:reduce){.doodle path,.doodle circle{stroke-dashoffset:0;transition:none}}
+.shot{position:relative}
+.shot img{width:100%;border-radius:0;display:block}
+.shot.wide{margin-left:calc(-6vw);width:calc(100% + 12vw);max-width:none}
+@media(min-width:900px){
+  .shot.side{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+}
+.shot .cap{font-size:.8rem;color:#5c4a46;margin:.4rem 0 0}
+.note{font-family:Newsreader,serif;font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.25;margin:0 0 1rem}
+.hand{font-family:Kalam,cursive;font-weight:700;color:var(--wine);font-size:1.15em}
+h2{font-family:Newsreader,serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .7rem}
+.jobs{display:grid;gap:.8rem}
+.jobs a{display:block;text-decoration:none;color:var(--ink);border-bottom:2px solid #e0d4c8;padding:.8rem 0;font-weight:600}
+.jobs a span{display:block;font-weight:400;color:#5c4a46}
+.fill{background:#ffe9b8;padding:0 .15em}
+footer{background:var(--wine);color:#f7f1e8;padding:2.5rem 6vw;font-size:1rem}
+footer a{color:#f3d2a0}
+.ft{display:grid;gap:1rem}
+@media(min-width:700px){.ft{grid-template-columns:repeat(3,1fr)}}
+html.js:not(.rm) [data-reveal]:not(.in){opacity:0;transform:translate3d(0,16px,0);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in,html.rm [data-reveal]{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none}.crayon path{stroke-dashoffset:0;transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#hoved">Gå til innhold</a>
+<header class="bar">
+  <a class="logo" href="#hoved">Bårdshaugen Barnehage<small>Bårdshaugvegen 25, 6650 Surnadal · 957 67 873</small></a>
+  <button class="mb" type="button" id="menyknapp" aria-expanded="false" aria-controls="meny">Meny</button>
+  <nav id="meny" aria-label="Hovedmeny"><ul>
+    <li><a href="#dagen">Dagen</a></li>
+    <li><a href="#hiene">Avdelingene</a></li>
+    <li><a href="#soke">Søke plass</a></li>
+    <li><a href="#jobb">Jobb</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul></nav>
+</header>
+<main id="hoved">
+  <header class="hero" data-hero>
+    <img class="bg" src="../img-v9/baal-lavvo-1280.svg" alt="Bål ved en lavvo i mørk, varm belysning. Ingen personer er gjenkjennelige. Illustrasjon." width="1280" height="720">
+    <div class="scrim"></div>
+    <svg class="crayon" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M140 120 c40 -30 80 20 60 50 c-10 20 30 30 50 10" stroke="#e8b85c" stroke-width="8" pathLength="1"/>
+      <path d="M980 90 c30 40 -10 70 -40 50 c-20 -10 -10 40 20 45" stroke="#d47a8a" stroke-width="7" pathLength="1"/>
+      <path d="M200 500 c80 20 40 80 -10 70" stroke="#8eb5d3" stroke-width="6" pathLength="1"/>
+      <path d="M860 520 c50 -60 120 -20 90 30 c-10 30 40 20 55 -5" stroke="#e8b85c" stroke-width="8" pathLength="1"/>
+      <path d="M70 700 c30 10 20 40 -10 35 c-20 0 -15 25 15 20" stroke="#c9a07a" stroke-width="6" pathLength="1"/>
+      <circle cx="1050" cy="240" r="18" stroke="#f2d2c4" stroke-width="6" fill="none" pathLength="1"/>
+      <circle cx="1080" cy="270" r="11" stroke="#8eb5d3" stroke-width="5" fill="none" pathLength="1"/>
+    </svg>
+    <div class="txt">
+      <h1>Vi åpner kvart på sju. Det er ofte mørkt.</h1>
+      <span class="lab">Illustrasjon</span>
+    </div>
+  </header>
+
+  <aside class="info" data-reveal id="tid">
+    <p id="apent">Sjekker om vi er åpne nå…</p>
+    <p>Mandag til fredag, til 17.15. Store deler av året er det mørkt ute når vi åpner.</p>
+  </aside>
+
+  <div class="essay">
+    <article class="shot side" id="dagen" data-reveal>
+      <div>
+        <div class="photo-wrap">
+        <img src="../img-v9/stovler-1280.svg" alt="Barne-støvler satt til tørk ved en radiator. Ingen ansikt. Illustrasjon." width="1280" height="720">
+        <svg class="doodle" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path d="M180 80 c80 -30 140 40 80 90" stroke="#d47a8a" stroke-width="12" pathLength="1"/>
+          <circle cx="1100" cy="120" r="36" stroke="#e8b85c" stroke-width="10" pathLength="1"/>
+          <path d="M980 560 c80 30 40 80 -20 40" stroke="#8eb5d3" stroke-width="11" pathLength="1"/>
+        </svg>
+        </div>
+        <p class="cap">Illustrasjon</p>
+      </div>
+      <div>
+        <p class="note">46 barn mellom ett og fem år. Midt på Skei, i Bårdshaugvegen 25.</p>
+        <p>Hvordan dagen er satt opp: <span class="fill">[Fylles inn]</span>.</p>
+      </div>
+    </article>
+
+    <article class="shot" id="hiene" data-reveal>
+      <p class="note">Tre avdelinger. <span class="hand">To på Skei, én ved bakken.</span></p>
+      <p>Revehiet er for de minste, <a href="tel:+4795497759">954 97 759</a>. Bjørnehiet er for de eldste, <a href="tel:+4795494816">954 94 816</a>. Sæterlia er friluftsavdelingen ved alpinanlegget, <a href="tel:+4741079426">410 79 426</a>.</p>
+    </article>
+
+    <article class="shot wide" data-reveal>
+      <div class="photo-wrap">
+      <img src="../img-v9/garderobe-1280.svg" alt="Garderobe med knagger og tøy, uten gjenkjennelige personer. Illustrasjon." width="1280" height="720">
+      <svg class="doodle" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <path d="M200 100 c90 -50 180 20 110 100" stroke="#e8b85c" stroke-width="14" pathLength="1"/>
+        <path d="M1000 90 c30 60 -40 90 -90 40" stroke="#d47a8a" stroke-width="13" pathLength="1"/>
+        <circle cx="220" cy="560" r="42" stroke="#8eb5d3" stroke-width="11" pathLength="1"/>
+        <path d="M920 540 c100 20 80 80 10 60" stroke="#c9a07a" stroke-width="12" pathLength="1"/>
+      </svg>
+      </div>
+      <p class="cap">Illustrasjon</p>
+    </article>
+
+    <article class="shot" id="soke" data-reveal>
+      <h2>Søke plass, eller bare ringe</h2>
+      <div class="jobs">
+        <a href="tel:+4795767873">Søke plass<span>Ring kontoret på 957 67 873 og spør om det er ledig plass. Slik søker du: [Fylles inn].</span></a>
+        <a href="#hiene">Ring avdelingen<span>Numrene står over. Kontoret er 957 67 873.</span></a>
+        <a href="#tid">Åpningstid og priser<span>06.45–17.15. Kostpenger 405 kroner i måneden. Annen betaling og fridager: [Fylles inn].</span></a>
+        <a href="#jobb">Jobbe hos oss<span>Åpen søknad til post@baardshaugen.no.</span></a>
+      </div>
+    </article>
+
+    <article class="shot side" id="jobb" data-reveal>
+      <div>
+        <div class="photo-wrap">
+        <img src="../img-v9/kaffe-1280.svg" alt="Kaffekopp på et bord. Illustrasjon." width="1280" height="720">
+        <svg class="doodle" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path d="M200 90 c70 -40 120 30 60 70" stroke="#d47a8a" stroke-width="12" pathLength="1"/>
+          <path d="M1000 540 c60 40 -20 70 -70 30" stroke="#e8b85c" stroke-width="13" pathLength="1"/>
+        </svg>
+        </div>
+        <p class="cap">Illustrasjon</p>
+      </div>
+      <div>
+        <h2>Jobb</h2>
+        <p>15 faste ansatte. Pedagognormen er oppfylt. Daglig leder er Reetta Järvinen, <a href="tel:+4741122302">411 22 302</a>, <a href="mailto:reetta@baardshaugen.no">reetta@baardshaugen.no</a>.</p>
+        <p>Barnehagen er foreldreeid og tar ikke utbytte. Ledige stillinger: <span class="fill">[Fylles inn]</span>.</p>
+      </div>
+    </article>
+  </div>
+</main>
+<footer id="kontakt">
+  <div class="ft">
+    <p><strong>Bårdshaugen Barnehage AS</strong><br>Org.nr. 972 179 760<br>Bårdshaugvegen 25, 6650 Surnadal</p>
+    <p>Kontor: <a href="tel:+4795767873">957 67 873</a><br><a href="mailto:post@baardshaugen.no">post@baardshaugen.no</a><br>Styreleder Espen Røv, 932 68 352</p>
+    <p>Instagram: <a href="https://www.instagram.com/bardshaugen_barnehage/">bardshaugen_barnehage</a><br>Visjon: «Trygg på neste steg».</p>
+  </div>
+</footer>
+<script>
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js'); if(reduce) document.documentElement.classList.add('rm');
+  const btn=document.getElementById('menyknapp'), nav=document.getElementById('meny');
+  btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});
+  const el=document.getElementById('apent');
+  try{
+    const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Oslo',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+    const get=t=>p.find(x=>x.type===t).value;
+    const mins=+get('hour')*60+(+get('minute'));
+    const open=mins>=405 && mins<1035 && !['Sat','Sun'].includes(get('weekday'));
+    el.textContent=open?'Vi er åpne nå.':'Vi er stengt nå.';
+  }catch(e){el.textContent='Åpent mandag til fredag, 06.45–17.15.';}
+  const hero=document.querySelector('[data-hero]');
+  const arm=()=>hero && hero.classList.add('in');
+  if(reduce) arm();
+  else {
+    const io=new IntersectionObserver(ents=>{ents.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.12});
+    document.querySelectorAll('[data-reveal]').forEach(n=>io.observe(n));
+    if(hero) io.observe(hero);
+    setTimeout(arm,400);
+  }
+})();
+</script>
+</body>
+</html>
