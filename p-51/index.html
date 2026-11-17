@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dere ser hiene. Ikke ansiktene. – Bårdshaugen Barnehage</title>
+<meta name="description" content="Bårdshaugen Barnehage viser hiene, ikke ansiktene. Revehiet, Bjørnehiet og Sæterlia i Surnadal.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root{--yellow:#f2d54a;--ink:#16120c;--wall:#ece7da;--red:#c4452b;--blue:#2a5a7a;--paper:#fffdf6;--focus:#16120c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--wall);color:var(--ink);font:400 1.14rem/1.55 Atkinson,system-ui,sans-serif}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--yellow)}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--yellow);color:var(--ink);padding:.5rem .8rem;z-index:40}
+img,svg{max-width:100%;height:auto;display:block}
+.mast{background:var(--yellow);display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 1.1rem;position:sticky;top:0;z-index:20;border-bottom:3px solid var(--ink)}
+.word{font-family:Anton,Impact,sans-serif;text-decoration:none;color:var(--ink);font-size:1.35rem;letter-spacing:.02em}
+.mast nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.2rem 1rem;font-weight:700;font-size:.95rem}
+.mast nav a{color:var(--ink);text-decoration:none}
+.mast nav a:hover{text-decoration:underline}
+.mb{display:none;border:3px solid var(--ink);background:var(--paper);padding:.3rem .65rem;font:700 .85rem Atkinson,sans-serif}
+@media(max-width:799px){
+  .mb{display:block}
+  .mast{flex-wrap:wrap}
+  .mast nav{display:none;width:100%}
+  .mast nav.open{display:block}
+  .mast nav ul{flex-direction:column;padding:.2rem 0 .5rem}
+}
+/* full-bleed wall of masked figures + yellow type bar */
+.stage{position:relative;background:#d9c9a8;min-height:calc(100svh - 3.2rem);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.crowd{position:absolute;left:0;right:0;bottom:0;top:8%;display:flex;align-items:flex-end;justify-content:center;gap:.4vw;padding:0 1vw 0;z-index:1}
+html.js:not(.rm) .fig{opacity:0;transform:translate3d(0,40px,0) rotate(var(--r,0deg))}
+.fig{width:auto;height:82%;flex:none;transform:rotate(var(--r,0deg));transition:transform 1s ease,opacity .8s ease}
+.fig svg{height:100%;width:auto;max-width:none;max-height:100%}
+.stage.in .fig,html.rm .fig{transform:translate3d(0,0,0) rotate(var(--r,0deg));opacity:1}
+.fig:nth-child(1){--r:-6deg;transition-delay:.05s}
+.fig:nth-child(2){--r:4deg;transition-delay:.18s;height:90%}
+.fig:nth-child(3){--r:-2deg;transition-delay:.28s}
+.fig:nth-child(4){--r:7deg;transition-delay:.4s}
+.fig:nth-child(5){--r:-8deg;transition-delay:.5s;height:74%}
+@media(max-width:599px){
+  .stage{min-height:78svh}
+  .crowd{top:auto;height:38vh}
+  .fig,.fig:nth-child(2),.fig:nth-child(5){height:100%;width:auto;max-width:38vw}
+  .fig svg{height:100%;width:auto;max-width:none}
+  .fig:nth-child(5),.fig:nth-child(4){display:none}
+}
+.bar{position:relative;z-index:2;background:var(--yellow);padding:1.6rem 6vw 2rem;border-top:3px solid var(--ink)}
+h1{font-family:Anton,Impact,sans-serif;font-size:clamp(2.6rem,8vw,5.6rem);line-height:.95;letter-spacing:.01em;margin:0;max-width:14ch}
+.bar p{margin:.8rem 0 0;max-width:36rem;font-size:1.2rem}
+/* chapters */
+.block{padding:4.5rem 6vw;max-width:1100px;margin:0 auto}
+h2{font-family:Anton,Impact,sans-serif;font-size:clamp(2rem,5vw,3.4rem);line-height:1;margin:0 0 .8rem;letter-spacing:.01em}
+.hiene{display:grid;gap:1.2rem}
+@media(min-width:800px){.hiene{grid-template-columns:repeat(3,1fr)}}
+.hi{background:var(--paper);border:3px solid var(--ink);padding:1.1rem 1rem 1.3rem;display:flex;flex-direction:column;gap:.6rem}
+.hi svg{width:100%;height:auto}
+.hi a{font-weight:700}
+.wall-shot{background:#c8b896;padding:3rem 0 0;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.wall-shot .inner{max-width:1100px;margin:0 auto;padding:0 6vw 2.5rem}
+.photo{position:relative;background:#b9a888}
+.photo img{width:100%;display:block;filter:saturate(.85) contrast(1.05)}
+/* drawn hoods over photo corners so no faces can sneak in, plus caption */
+.photo .hoods{position:absolute;inset:0;pointer-events:none}
+.cap{font-size:.85rem;margin:.5rem 0 0}
+.prakt{background:var(--paper);border:3px solid var(--ink);padding:1.3rem;margin-top:1rem}
+#apent{font-family:Anton,Impact,sans-serif;font-size:1.8rem;margin:0 0 .4rem}
+.acts{display:grid;gap:0;border-top:3px solid var(--ink);margin-top:2rem}
+.acts a{display:block;color:var(--ink);text-decoration:none;padding:1rem 0;border-bottom:3px solid var(--ink);font-weight:700}
+.acts a span{display:block;font-weight:400}
+.fill{background:var(--yellow);padding:0 .15em}
+footer{background:var(--ink);color:var(--yellow);padding:2.5rem 6vw}
+footer a{color:var(--yellow)}
+.ft{display:grid;gap:1rem}
+@media(min-width:700px){.ft{grid-template-columns:repeat(3,1fr)}}
+html.js:not(.rm) [data-reveal]:not(.in){opacity:0;transform:translate3d(0,18px,0);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in,html.rm [data-reveal]{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){[data-reveal],.fig{opacity:1;transform:none;transition:none}.fig{transform:rotate(var(--r,0deg))}}
+</style>
+</head>
+<body>
+<a class="skip" href="#hoved">Gå til innhold</a>
+<header class="mast">
+  <a class="word" href="#hoved">BÅRDSHAUGEN</a>
+  <button class="mb" type="button" id="menyknapp" aria-expanded="false" aria-controls="meny">Meny</button>
+  <nav id="meny" aria-label="Hovedmeny"><ul>
+    <li><a href="#hiene">Hiene</a></li>
+    <li><a href="#soke">Søke plass</a></li>
+    <li><a href="#tid">Åpningstid</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul></nav>
+</header>
+<main id="hoved">
+  <header class="stage" data-stage>
+    <div class="crowd" aria-hidden="true">
+      <!-- paper-plate figures: no faces, only plates, ears, backs, hoods -->
+      <svg class="fig" viewBox="0 0 200 320" role="presentation">
+        <ellipse cx="100" cy="290" rx="46" ry="14" fill="#000" opacity=".12"/>
+        <rect x="70" y="170" width="60" height="110" rx="8" fill="#c4452b"/>
+        <rect x="46" y="180" width="28" height="80" rx="10" fill="#2a5a7a"/>
+        <rect x="126" y="180" width="28" height="80" rx="10" fill="#2a5a7a"/>
+        <circle cx="100" cy="120" r="62" fill="#fffdf6" stroke="#16120c" stroke-width="5"/><circle cx="100" cy="120" r="55" fill="none" stroke="#16120c" stroke-width="1.6" stroke-dasharray="3 5" opacity=".7"/>
+        <circle cx="78" cy="118" r="10" fill="#16120c"/>
+        <circle cx="122" cy="118" r="10" fill="#16120c"/>
+        <path d="M80 148 q20 16 40 0" fill="none" stroke="#16120c" stroke-width="5" stroke-linecap="round"/>
+        <path d="M48 80 l-18 -28 32 8" fill="#fffdf6" stroke="#16120c" stroke-width="4"/>
+        <path d="M152 80 l18 -28 -32 8" fill="#fffdf6" stroke="#16120c" stroke-width="4"/>
+      </svg>
+      <svg class="fig" viewBox="0 0 220 360" role="presentation">
+        <ellipse cx="110" cy="330" rx="52" ry="14" fill="#000" opacity=".12"/>
+        <rect x="78" y="200" width="64" height="120" rx="8" fill="#2a5a7a"/>
+        <rect x="50" y="210" width="30" height="90" rx="12" fill="#c4452b"/>
+        <rect x="140" y="210" width="30" height="90" rx="12" fill="#c4452b"/>
+        <circle cx="110" cy="140" r="72" fill="#f2d54a" stroke="#16120c" stroke-width="5"/><circle cx="110" cy="140" r="64" fill="none" stroke="#16120c" stroke-width="1.6" stroke-dasharray="3 5" opacity=".7"/>
+        <path d="M70 138 h28 v8 h-28z M122 138 h28 v8 h-28z" fill="#16120c"/>
+        <circle cx="84" cy="128" r="6" fill="#16120c"/>
+        <circle cx="136" cy="128" r="6" fill="#16120c"/>
+        <path d="M90 170 h40" stroke="#16120c" stroke-width="5" stroke-linecap="round"/>
+        <path d="M56 85 l-10 -40 40 16" fill="#f2d54a" stroke="#16120c" stroke-width="4"/>
+        <path d="M164 85 l10 -40 -40 16" fill="#f2d54a" stroke="#16120c" stroke-width="4"/>
+      </svg>
+      <svg class="fig" viewBox="0 0 200 320" role="presentation">
+        <ellipse cx="100" cy="290" rx="46" ry="14" fill="#000" opacity=".12"/>
+        <rect x="68" y="168" width="64" height="112" rx="10" fill="#16120c"/>
+        <rect x="42" y="178" width="28" height="84" rx="10" fill="#f2d54a"/>
+        <rect x="130" y="178" width="28" height="84" rx="10" fill="#f2d54a"/>
+        <circle cx="100" cy="118" r="64" fill="#fffdf6" stroke="#16120c" stroke-width="5"/><circle cx="100" cy="118" r="57" fill="none" stroke="#16120c" stroke-width="1.6" stroke-dasharray="3 5" opacity=".7"/>
+        <path d="M70 125 q14 -16 28 0" fill="none" stroke="#16120c" stroke-width="6" stroke-linecap="round"/>
+        <path d="M106 125 q14 -16 28 0" fill="none" stroke="#16120c" stroke-width="6" stroke-linecap="round"/>
+        <path d="M78 150 q22 18 44 0" fill="none" stroke="#16120c" stroke-width="5" stroke-linecap="round"/>
+        <rect x="58" y="70" width="84" height="22" rx="4" fill="#c4452b" stroke="#16120c" stroke-width="3"/>
+      </svg>
+      <svg class="fig" viewBox="0 0 180 300" role="presentation">
+        <ellipse cx="90" cy="275" rx="40" ry="12" fill="#000" opacity=".12"/>
+        <rect x="62" y="160" width="56" height="100" rx="8" fill="#2a5a7a"/>
+        <circle cx="90" cy="110" r="56" fill="#fffdf6" stroke="#16120c" stroke-width="5"/><circle cx="90" cy="110" r="50" fill="none" stroke="#16120c" stroke-width="1.6" stroke-dasharray="3 5" opacity=".7"/>
+        <circle cx="72" cy="108" r="8" fill="#16120c"/>
+        <circle cx="108" cy="108" r="8" fill="#16120c"/>
+        <circle cx="90" cy="128" r="8" fill="#c4452b"/>
+        <path d="M40 70 l-16 -26 30 8z M140 70 l16 -26 -30 8z" fill="#2a5a7a" stroke="#16120c" stroke-width="3"/>
+      </svg>
+      <svg class="fig" viewBox="0 0 180 300" role="presentation">
+        <!-- seen from the back: hood, no face -->
+        <ellipse cx="90" cy="275" rx="40" ry="12" fill="#000" opacity=".12"/>
+        <rect x="60" y="155" width="60" height="108" rx="10" fill="#c4452b"/>
+        <ellipse cx="90" cy="112" rx="50" ry="56" fill="#c4452b" stroke="#16120c" stroke-width="4"/>
+        <path d="M50 130 q40 20 80 0" fill="none" stroke="#16120c" stroke-width="3"/>
+        <rect x="70" y="150" width="40" height="16" fill="#2a5a7a"/>
+      </svg>
+    </div>
+    <div class="bar">
+      <h1>Dere ser hiene. Ikke ansiktene.</h1>
+      <p>Vi viser barnehagen uten å vise barna. Det er slik vi vil ha det på nettsiden.</p>
+    </div>
+  </header>
+
+  <section class="block" id="hiene" data-reveal>
+    <h2>Tre hi</h2>
+    <p>Revehiet og Bjørnehiet er på Skei, i Bårdshaugvegen 25. Sæterlia er friluftsavdelingen ved alpinanlegget.</p>
+    <div class="hiene">
+      <article class="hi">
+        <svg viewBox="0 0 200 140" aria-hidden="true"><circle cx="100" cy="78" r="52" fill="#fffdf6" stroke="#16120c" stroke-width="4"/><path d="M62 44 l-16 -30 36 10" fill="#c4452b" stroke="#16120c" stroke-width="3"/><path d="M138 44 l16 -30 -36 10" fill="#c4452b" stroke="#16120c" stroke-width="3"/><circle cx="82" cy="76" r="8" fill="#16120c"/><circle cx="118" cy="76" r="8" fill="#16120c"/><path d="M84 100 q16 10 32 0" fill="none" stroke="#16120c" stroke-width="4"/></svg>
+        <h3 style="margin:0;font-family:Anton,sans-serif">Revehiet</h3>
+        <p style="margin:0">De minste. <a href="tel:+4795497759">954 97 759</a>.</p>
+      </article>
+      <article class="hi">
+        <svg viewBox="0 0 200 140" aria-hidden="true"><circle cx="100" cy="78" r="52" fill="#f2d54a" stroke="#16120c" stroke-width="4"/><path d="M58 50 l-8 -28 32 8" fill="#16120c"/><path d="M142 50 l8 -28 -32 8" fill="#16120c"/><path d="M74 76 h20 v6 h-20z M106 76 h20 v6 h-20z" fill="#16120c"/><path d="M84 102 h32" stroke="#16120c" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3 style="margin:0;font-family:Anton,sans-serif">Bjørnehiet</h3>
+        <p style="margin:0">De eldste, de siste årene før skolen. <a href="tel:+4795494816">954 94 816</a>.</p>
+      </article>
+      <article class="hi">
+        <svg viewBox="0 0 200 140" aria-hidden="true"><circle cx="100" cy="80" r="48" fill="#fffdf6" stroke="#16120c" stroke-width="4"/><path d="M70 44 h60 l-8 16 h-44z" fill="#2a5a7a" stroke="#16120c" stroke-width="3"/><path d="M78 84 q10 -12 20 0" fill="none" stroke="#16120c" stroke-width="5"/><path d="M104 84 q10 -12 20 0" fill="none" stroke="#16120c" stroke-width="5"/><path d="M82 104 q18 12 36 0" fill="none" stroke="#16120c" stroke-width="4"/></svg>
+        <h3 style="margin:0;font-family:Anton,sans-serif">Sæterlia</h3>
+        <p style="margin:0">Ved alpinanlegget. <a href="tel:+4741079426">410 79 426</a>.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wall-shot" data-reveal>
+    <div class="inner">
+      <div class="photo">
+        <img src="../img-v9/lekerom-1280.svg" alt="Lekerom, uten personer. Illustrasjon." width="1280" height="720">
+        <svg class="hoods" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <circle cx="180" cy="520" r="90" fill="#fffdf6" stroke="#16120c" stroke-width="8" opacity=".92"/>
+          <circle cx="155" cy="510" r="10" fill="#16120c"/>
+          <circle cx="205" cy="510" r="10" fill="#16120c"/>
+          <path d="M160 545 q20 16 40 0" fill="none" stroke="#16120c" stroke-width="6"/>
+          <circle cx="1100" cy="480" r="100" fill="#f2d54a" stroke="#16120c" stroke-width="8" opacity=".92"/>
+          <path d="M1055 478 h30 v8 h-30z M1115 478 h30 v8 h-30z" fill="#16120c"/>
+        </svg>
+      </div>
+      <p class="cap">Illustrasjon. Platene ligger over bildet, så ingen ansikt kommer med.</p>
+    </div>
+  </section>
+
+  <section class="block" id="soke" data-reveal>
+    <h2>Ring, eller kom innom</h2>
+    <p>46 barn mellom ett og fem år. Vi er foreldreeid og tar ikke utbytte. Kontoret: <a href="tel:+4795767873">957 67 873</a>, <a href="mailto:post@baardshaugen.no">post@baardshaugen.no</a>.</p>
+    <article class="prakt" id="tid">
+      <p id="apent">Sjekker om vi er åpne nå…</p>
+      <p>Mandag til fredag, 06.45–17.15. Kostpenger: 405 kroner i måneden. Annen betaling og fridager: <span class="fill">[Fylles inn]</span>.</p>
+    </article>
+    <nav class="acts" aria-label="Oppgaver">
+      <a href="tel:+4795767873">Søke plass<span>Ring kontoret og spør om det er ledig plass. Slik søker du: [Fylles inn].</span></a>
+      <a href="#hiene">Ring avdelingen<span>Tre nummer, ett for hvert hi.</span></a>
+      <a href="#tid">Åpningstid og priser<span>06.45–17.15. Kost 405 kroner i måneden.</span></a>
+      <a href="#jobb">Jobbe hos oss<span>15 faste. Pedagognormen er oppfylt. Åpen søknad til post@baardshaugen.no.</span></a>
+    </nav>
+  </section>
+
+  <section class="block" id="jobb" data-reveal>
+    <h2>Jobb</h2>
+    <p>Daglig leder Reetta Järvinen, <a href="tel:+4741122302">411 22 302</a>, <a href="mailto:reetta@baardshaugen.no">reetta@baardshaugen.no</a>. Ledige stillinger: <span class="fill">[Fylles inn]</span>.</p>
+  </section>
+</main>
+<footer id="kontakt">
+  <div class="ft">
+    <p><strong>Bårdshaugen Barnehage AS</strong><br>Org.nr. 972 179 760<br>Bårdshaugvegen 25, 6650 Surnadal</p>
+    <p>Kontor: <a href="tel:+4795767873">957 67 873</a><br>Styreleder Espen Røv, 932 68 352</p>
+    <p>Instagram: <a href="https://www.instagram.com/bardshaugen_barnehage/">bardshaugen_barnehage</a><br>Visjon: «Trygg på neste steg».</p>
+  </div>
+</footer>
+<script>
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js'); if(reduce) document.documentElement.classList.add('rm');
+  const btn=document.getElementById('menyknapp'), nav=document.getElementById('meny');
+  btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});
+  const el=document.getElementById('apent');
+  try{
+    const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Oslo',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+    const get=t=>p.find(x=>x.type===t).value;
+    const mins=+get('hour')*60+(+get('minute'));
+    const open=mins>=405 && mins<1035 && !['Sat','Sun'].includes(get('weekday'));
+    el.textContent=open?'Vi er åpne nå.':'Vi er stengt nå.';
+  }catch(e){el.textContent='Åpent mandag til fredag, 06.45–17.15.';}
+  const stage=document.querySelector('[data-stage]');
+  if(reduce){ if(stage) stage.classList.add('in'); }
+  else {
+    const io=new IntersectionObserver(ents=>{ents.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.12});
+    document.querySelectorAll('[data-reveal]').forEach(n=>io.observe(n));
+    if(stage) io.observe(stage);
+  }
+})();
+</script>
+</body>
+</html>
